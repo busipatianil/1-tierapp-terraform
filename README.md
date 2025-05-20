@@ -1,6 +1,6 @@
 # 1-tier-application
 
-===================================AWC-CLI INSTALL ==========================================================
+=======================AWC-CLI INSTALL =========================
 Step1: Update package Lists by using below command
      
      sudo apt-get update -y 
@@ -85,11 +85,11 @@ EC2 Instance (Ubuntu with Apache)
 
 Commands used:
 
-1.terraform init
+		1.terraform init
 
-2.terraform plan
+		2.terraform plan
 
-3.terraform apply
+		3.terraform apply
 
 Access the Web Server
 
@@ -101,4 +101,4 @@ Hello ! Deployed Apache2 to EC2 Through Terraform
 
 Clean up:
 
-4.terraform destroy
+			4.terraform destroy
