@@ -1,6 +1,7 @@
 # 1-tier-application
 
-=======================AWC-CLI INSTALL =========================
+=========== AWC-CLI INSTALL ============
+
 Step1: Update package Lists by using below command
      
      sudo apt-get update -y 
