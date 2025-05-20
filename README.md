@@ -43,7 +43,7 @@ Commands Frequently Used in AWS CLI
      
      aws iam list-users
 
-==============================Terraform Installation====================
+============== Terraform Installation =============
 
 step1: Go to official website
      
@@ -54,13 +54,13 @@ step2: copy the Version link for install
      wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
      echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
      
-     sudo apt update && sudo apt install terraform  
+          sudo apt update && sudo apt install terraform  
 	 
 step3: Check if Terraform is successfully installed
      
-     terraform -v 
+           terraform -v 
      
-======================components deployed ========================================
+====================== components deployed =================
 
 AWS VPC
 
@@ -74,7 +74,7 @@ Security Group (allows SSH and HTTP)
 
 EC2 Instance (Ubuntu with Apache)
 
-===================Project structure=====================================================
+=================== Project structure ===========
 
 ├── main.tf # Main infrastructure config
 
@@ -94,7 +94,7 @@ Commands used:
 
 Access the Web Server
 
-http://
+http://<PublicIPAddress:80>
 
 You should see:
 
@@ -102,4 +102,4 @@ Hello ! Deployed Apache2 to EC2 Through Terraform
 
 Clean up:
 
-			4.terraform destroy
+	     4.terraform destroy
