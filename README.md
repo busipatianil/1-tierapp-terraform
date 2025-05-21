@@ -90,7 +90,9 @@ Commands used:
 
 		2.terraform plan
 
-		3.terraform apply
+		3.terraform validate
+  		
+    		4.terraform apply -y 
 
 Access the Web Server
 
