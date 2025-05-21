@@ -53,8 +53,7 @@ step2: copy the Version link for install
      
      wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
      echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(grep -oP '(?<=UBUNTU_CODENAME=).*' /etc/os-release || lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
-     
-          sudo apt update && sudo apt install terraform  
+sudo apt update && sudo apt install terraform  
 	 
 step3: Check if Terraform is successfully installed
      
@@ -92,7 +91,7 @@ Commands used:
 
 		3.terraform validate
   		
-    		4.terraform apply -y 
+    	       4.terraform apply -y 
 
 Access the Web Server
 
